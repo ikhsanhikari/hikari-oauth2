@@ -10,13 +10,12 @@ Dribbble: www.dribbble.com/keenthemes
 Like: www.facebook.com/keenthemes
 License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
 -->
-<html lang="en">
+<html  xmlns:th="http://www.thymeleaf.org">
 <!--begin::Head-->
 
 <head>
 	<base href="../../../">
-	<title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel
-		by Keenthemes</title>
+	<title>Hikari Oauth2.0</title>
 	<meta name="description"
 		content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
 	<meta name="keywords"
@@ -60,11 +59,10 @@ License: For each use you must have a valid license purchased only from above li
 						</a>
 						<!--end::Logo-->
 						<!--begin::Title-->
-						<h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #986923;">Welcome to Metronic</h1>
+						<h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #986923;">Welcome to Hikari Oauth2</h1>
 						<!--end::Title-->
 						<!--begin::Description-->
-						<p class="fw-bold fs-2" style="color: #986923;">Discover Amazing Metronic
-							<br />with great build tools
+						<p class="fw-bold fs-2" style="color: #986923;">Good work will be better
 						</p>
 						<!--end::Description-->
 					</div>
@@ -81,6 +79,24 @@ License: For each use you must have a valid license purchased only from above li
 			<div class="d-flex flex-column flex-lg-row-fluid py-10">
 				<!--begin::Content-->
 				<div class="d-flex flex-center flex-column flex-column-fluid">
+					<!--begin::Alert-->
+					<div class="alert alert-danger alert-dismissible" th:if="${error!=null}">
+						<!--begin::Icon-->
+<!--						<span class="svg-icon svg-icon-2hx svg-icon-primary me-3">...</span>-->
+						<!--end::Icon-->
+
+						<!--begin::Wrapper-->
+						<div class="d-flex flex-column">
+							<!--begin::Title-->
+							<h4 class="mb-1 text-dark">Alert</h4>
+							<!--end::Title-->
+							<!--begin::Content-->
+							<span><p th:text="${error}"></p></span>
+							<!--end::Content-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Alert-->
 					<!--begin::Wrapper-->
 					<div class="w-lg-500px p-10 p-lg-15 mx-auto">
 						<!--begin::Form-->
@@ -88,73 +104,73 @@ License: For each use you must have a valid license purchased only from above li
 							<!--begin::Heading-->
 							<div class="text-center mb-10">
 								<!--begin::Title-->
-								<h1 class="text-dark mb-3">Sign In to Metronic</h1>
+								<h1 class="text-dark mb-3">Sign In Hikari Oauth2 </h1>
 								<!--end::Title-->
 								<!--begin::Link-->
-								<div class="text-gray-400 fw-bold fs-4">New Here?
-									<a href="/home" class="link-primary fw-bolder">Create an Account</a>
-								</div>
+<!--								<div class="text-gray-400 fw-bold fs-4">New Here?-->
+<!--									<a href="/home" class="link-primary fw-bolder">Create an Account</a>-->
+<!--								</div>-->
 								<!--end::Link-->
 							</div>
 							<!--begin::Heading-->
 							<!--begin::Input group-->
-							<div class="fv-row mb-10">
-								<!--begin::Label-->
-								<label class="form-label fs-6 fw-bolder text-dark">Email</label>
-								<!--end::Label-->
-								<!--begin::Input-->
-								<input class="form-control form-control-lg form-control-solid" type="text" name="email"
-									autocomplete="off" />
-								<!--end::Input-->
-							</div>
-							<!--end::Input group-->
-							<!--begin::Input group-->
-							<div class="fv-row mb-10">
-								<!--begin::Wrapper-->
-								<div class="d-flex flex-stack mb-2">
-									<!--begin::Label-->
-									<label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
-									<!--end::Label-->
-									<!--begin::Link-->
-									<a href="../../demo1/dist/authentication/flows/aside/password-reset.html"
-										class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
-									<!--end::Link-->
-								</div>
-								<!--end::Wrapper-->
-								<!--begin::Input-->
-								<input class="form-control form-control-lg form-control-solid" type="password"
-									name="password" autocomplete="off" />
-								<!--end::Input-->
-							</div>
+<!--							<div class="fv-row mb-10">-->
+<!--								&lt;!&ndash;begin::Label&ndash;&gt;-->
+<!--								<label class="form-label fs-6 fw-bolder text-dark">Email</label>-->
+<!--								&lt;!&ndash;end::Label&ndash;&gt;-->
+<!--								&lt;!&ndash;begin::Input&ndash;&gt;-->
+<!--								<input class="form-control form-control-lg form-control-solid" type="text" name="email"-->
+<!--									autocomplete="off" />-->
+<!--								&lt;!&ndash;end::Input&ndash;&gt;-->
+<!--							</div>-->
+<!--							&lt;!&ndash;end::Input group&ndash;&gt;-->
+<!--							&lt;!&ndash;begin::Input group&ndash;&gt;-->
+<!--							<div class="fv-row mb-10">-->
+<!--								&lt;!&ndash;begin::Wrapper&ndash;&gt;-->
+<!--								<div class="d-flex flex-stack mb-2">-->
+<!--									&lt;!&ndash;begin::Label&ndash;&gt;-->
+<!--									<label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>-->
+<!--									&lt;!&ndash;end::Label&ndash;&gt;-->
+<!--									&lt;!&ndash;begin::Link&ndash;&gt;-->
+<!--									<a href="../../demo1/dist/authentication/flows/aside/password-reset.html"-->
+<!--										class="link-primary fs-6 fw-bolder">Forgot Password ?</a>-->
+<!--									&lt;!&ndash;end::Link&ndash;&gt;-->
+<!--								</div>-->
+<!--								&lt;!&ndash;end::Wrapper&ndash;&gt;-->
+<!--								&lt;!&ndash;begin::Input&ndash;&gt;-->
+<!--								<input class="form-control form-control-lg form-control-solid" type="password"-->
+<!--									name="password" autocomplete="off" />-->
+<!--								&lt;!&ndash;end::Input&ndash;&gt;-->
+<!--							</div>-->
 							<!--end::Input group-->
 							<!--begin::Actions-->
 							<div class="text-center">
 								<!--begin::Submit button-->
-								<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
-									<span class="indicator-label">Continue</span>
-									<span class="indicator-progress">Please wait...
-										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-								</button>
+<!--								<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">-->
+<!--									<span class="indicator-label">Continue</span>-->
+<!--									<span class="indicator-progress">Please wait...-->
+<!--										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>-->
+<!--								</button>-->
 								<!--end::Submit button-->
 								<!--begin::Separator-->
-								<div class="text-center text-muted text-uppercase fw-bolder mb-5">or</div>
+<!--								<div class="text-center text-muted text-uppercase fw-bolder mb-5">or</div>-->
 								<!--end::Separator-->
 								<!--begin::Google link-->
 								<a onclick="oauth('google')"
 									class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5">
 									<img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg"
-										class="h-20px me-3" />Continue with Google</a>
+										class="h-20px me-3" />Login with Google</a>
 								<!--end::Google link-->
 								<!--begin::Google link-->
 								<a onclick="oauth('facebook')"
 									class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5">
 									<img alt="Logo" src="assets/media/svg/brand-logos/facebook-4.svg"
-										class="h-20px me-3" />Continue with Facebook</a>
+										class="h-20px me-3" />Login with Facebook</a>
 								<!--end::Google link-->
 								<!--begin::Google link-->
 								<a onclick="oauth('github')" class="btn btn-flex flex-center btn-light btn-lg w-100">
 									<img alt="Logo" src="assets/media/svg/brand-logos/apple-black.svg"
-										class="h-20px me-3" />Continue with Apple</a>
+										class="h-20px me-3" />Login with Github</a>
 								<!--end::Google link-->
 							</div>
 							<!--end::Actions-->
